@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -12,26 +12,41 @@
 </head>
 <body>
 <!-- HEADER -->
-    <header class="menu-section">
+    <header class="page-header">
         <div class="container clearfix">
             <nav class="page-nav">
-                <a href="#" class="logo-site">
-                    <img srcset="img/MoGo.png 86w, img/MoGo@2x.png 172w"
+                <a href="#" class="link site-logo">
+                    <img class="sit-logo__img" srcset="img/MoGo.png 86w, img/MoGo@2x.png 172w"
                     sizes="86px"
                     src="img/MoGo.png"
                     alt="MoGo"
                     height="23">
                 </a>
-                <ul class="site-navigation">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>                    
+              <div class="navigation">
+                <ul class="list nav-site">
+                    <li class="nav-site__item"><a class="link nav-site__link" href="#">About</a></li>
+                    <li class="nav-site__item"><a class="link nav-site__link" href="#">Service</a></li>
+                    <li class="nav-site__item"><a class="link nav-site__link" href="#">Work</a></li>
+                    <li class="nav-site__item"><a class="link nav-site__link" href="#">Blog</a></li>
+                    <li class="nav-site__item"><a class="link nav-site__link" href="#">Contact</a></li>                    
                 </ul>
+                <ul class="list nav-search">
+                    <li class="nav-search__item"><a class="link nav-search__link" href="#">
+                        <svg class="nav-search__icon">
+                            <use href="img/symbol-defs.svg#icon-SHOPPING-CART"></use>
+                        </svg>
+                    </a></li>
+                    <li class="nav-search__item"><a class="link nav-search__link" href="#">
+                        <svg class="nav-search__icon">
+                            <use href="img/symbol-defs.svg#icon-MAGNIFYING-GLASS"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+              </div>
+
             </nav>
-            <p class="site-about">Creative Template</p>
-            <h1 class="site-title">Welcome to MoGo</h1>
+            <p class="page-header__about">Creative Template</p>
+            <h1 class="page-header__title">Welcome to MoGo</h1>
             <button class="header-button btn">Learn more</button>
         </div>
     </header>
@@ -40,73 +55,98 @@
        <section class="service">
            <div class="container">
             <div class="center-one">
-                <p class="about-service">We work with</p>
-                <h2 class="title">Amazing Services</h2>
+                <p class="about-section">We work with</p>
+                <h2 class="title-section">Amazing Services</h2>
             </div>
-            <ul class="service-list">
-                <li class="service-list-item icon-alarm">
-                    <h3>Photography</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <ul class="list service__list">
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-ALARM"></use>
+                    </svg>
+                    <h3 class="service-card__title">Photography</h3>
+                    <p class="service-card__about text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="service-list-item icon-line">
-                    <h3>Web Design</h3>
-                    <p class="text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-LINE-GRAPH"></use>
+                    </svg>
+                    <h3 class="service-card__title">Web Design</h3>
+                    <p class="service-card__about text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="service-list-item icon-computer">
-                    <h3>Creativity</h3>
-                    <p class="text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-COMPUTER"></use>
+                    </svg>
+                    <h3 class="service-card__title">Creativity</h3>
+                    <p class="service-card__about text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="service-list-item icon-book">
-                    <h3>Seo</h3>
-                    <p class="text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-BOOK"></use>
+                    </svg>
+                    <h3 class="service-card__title">Seo</h3>
+                    <p class="service-card__about text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                 </li>
-                <li class="service-list-item icon-home">
-                    <h3>Css/Html</h3>
-                    <p class="text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-HOME"></use>
+                    </svg>
+                    <h3 class="service-card__title">Css/Html</h3>
+                    <p class="service-card__about text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
                 </li>
-                <li class="service-list-item icon-image">
-                    <h3>Digital</h3>
-                    <p class="text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <li class="service-card">
+                    <svg class="service-card__icon" >
+                        <use href="img/symbol-defs.svg#icon-IMAGE"></use>
+                    </svg>
+                    <h3 class="service-card__title">Digital</h3>
+                    <p class="service-card__about text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
             </ul>
            </div>
        </section>
 
-<!-- OUR TEAM -->
-       <section class="our-team">
+<!-- TEAM -->
+       <section class="team">
           <div class="container">
             <div class="center-two">
-                <p class="about-service text">Who we are</p>
-                <h2 class="title">Meet our team</h2>
+                <p class="about-section">Who we are</p>
+                <h2 class="title-section">Meet our team</h2>
             </div>
-            <p class="about-team text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="team-list">
-                 <li class="team-list-item">
+            <p class="team-about text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <ul class="list team-list">
+                 <li class="team-list__item">
                      <div class="card-head">
                        <div class="blue-background"></div>
                            <div class="card-hover">
-                           <img srcset="img/Boy.png 380w, img/Boy@2x.png 760w"
+                           <img class="card-hover__img" srcset="img/Boy.png 380w, img/Boy@2x.png 760w"
                            sizes="380px"
                            src="img/Boy.png"
                            alt="Boy"
                            height="470">
-                           <div class="card-image-foreground">
-                               <ul class="team-list-socials">
-                                  <li><a href="#" class="icon-facebook">
-                                      <!-- <span class="visually-hidden">Facebook</span> -->
-                                      <svg>
-                                          <use href="img/sprite.svg#Icon-Alarm"></use>
-                                      </svg>
+                           <div class="image-foreground">
+                               <ul class="list list-socials">
+                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                        <svg class="list-socials__icon">
+                                            <use href="img/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
                                       </a>
                                   </li>
-                                  <li><a href="#" class="icon-twitter">
-                                     <span class="visually-hidden">Twitter</span>
+                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                        <svg class="list-socials__icon">
+                                            <use href="img/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
                                      </a>
-                                  </li><li><a href="#" class="icon-pinterest">
-                                     <span class="visually-hidden">Pinterest</span>
+                                  </li>
+                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                        <svg class="list-socials__icon">
+                                            <use href="img/symbol-defs.svg#icon-pinterest"></use>
+                                        </svg>
                                      </a>
-                                  </li><li><a href="#" class="icon-instagram">
-                                     <span class="visually-hidden">Instagram</span>
+                                  </li>
+                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                        <svg class="list-socials__icon">
+                                            <use href="img/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
                                      </a>
                                   </li>
                                </ul>
@@ -114,76 +154,96 @@
                        </div>
                     </div>
                     <div class="card-body">
-                        <p class="team-list-name">Christopher Campbell</p>
-                        <p class="team-list-about text">Branding/UX design</p>
+                        <p class="card-body__name">Christopher Campbell</p>
+                        <p class="card-body__about text">Branding/UX design</p>
                     </div>
                 </li>
-                <li class="team-list-item">
+                <li class="team-list__item">
                  <div class="card-head">
                    <div class="blue-background"></div>
                        <div class="card-hover">
-                        <img srcset="img/Boy_2.png 380w, img/Boy_2@2x.png 760w"
+                        <img class="card-hover__img" srcset="img/Boy_2.png 380w, img/Boy_2@2x.png 760w"
                         sizes="380px"
                         src="img/Boy_2.png"
                         alt="Boy"
                         height="470">
-                       <div class="card-image-foreground">
-                           <ul class="team-list-socials">
-                              <li><a href="#" class="icon-facebook">
-                                  <span class="visually-hidden">Facebook</span>
-                                  </a>
-                              </li>
-                              <li><a href="#" class="icon-twitter">
-                                 <span class="visually-hidden">Twitter</span>
-                                 </a>
-                              </li><li><a href="#" class="icon-pinterest">
-                                 <span class="visually-hidden">Pinterest</span>
-                                 </a>
-                              </li><li><a href="#" class="icon-instagram">
-                                 <span class="visually-hidden">Instagram</span>
-                                 </a>
-                              </li>
-                           </ul>
+                       <div class="image-foreground">
+                        <ul class="list list-socials">
+                            <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                  <svg class="list-socials__icon">
+                                      <use href="img/symbol-defs.svg#icon-facebook"></use>
+                                  </svg>
+                                </a>
+                            </li>
+                            <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                  <svg class="list-socials__icon">
+                                      <use href="img/symbol-defs.svg#icon-twitter"></use>
+                                  </svg>
+                               </a>
+                            </li>
+                            <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                  <svg class="list-socials__icon">
+                                      <use href="img/symbol-defs.svg#icon-pinterest"></use>
+                                  </svg>
+                               </a>
+                            </li>
+                            <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                  <svg class="list-socials__icon">
+                                      <use href="img/symbol-defs.svg#icon-instagram"></use>
+                                  </svg>
+                               </a>
+                            </li>
+                         </ul>
                        </div>
                    </div>
                 </div>
                 <div class="card-body">
-                    <p class="team-list-name">Michael Fertig </p>
-                    <p class="team-list-about text">Developer</p>
+                    <p class="card-body__name">Michael Fertig </p>
+                    <p class="card-body__about text">Developer</p>
                 </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list__item">
              <div class="card-head">
                <div class="blue-background"></div>
                    <div class="card-hover">
-                    <img srcset="img/Boy_3.png 380w, img/Boy_3@2x.png 760w"
+                    <img class="card-hover__img" srcset="img/Boy_3.png 380w, img/Boy_3@2x.png 760w"
                     sizes="380px"
                     src="img/Boy_3.png"
                     alt="Boy"
                     height="470">
-                   <div class="card-image-foreground">
-                       <ul class="team-list-socials">
-                          <li><a href="#" class="icon-facebook">
-                              <span class="visually-hidden">Facebook</span>
-                              </a>
-                          </li>
-                          <li><a href="#" class="icon-twitter">
-                             <span class="visually-hidden">Twitter</span>
-                             </a>
-                          </li><li><a href="#" class="icon-pinterest">
-                             <span class="visually-hidden">Pinterest</span>
-                             </a>
-                          </li><li><a href="#" class="icon-instagram">
-                             <span class="visually-hidden">Instagram</span>
-                             </a>
-                          </li>
-                       </ul>
+                   <div class="image-foreground">
+                    <ul class="list list-socials">
+                        <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                              <svg class="list-socials__icon">
+                                  <use href="img/symbol-defs.svg#icon-facebook"></use>
+                              </svg>
+                            </a>
+                        </li>
+                        <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                              <svg class="list-socials__icon">
+                                  <use href="img/symbol-defs.svg#icon-twitter"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                              <svg class="list-socials__icon">
+                                  <use href="img/symbol-defs.svg#icon-pinterest"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                              <svg class="list-socials__icon">
+                                  <use href="img/symbol-defs.svg#icon-instagram"></use>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
                    </div>
                </div>
                </div>
                <div class="card-body">
-                <p class="team-list-name">Matthew Dix</p>
-                <p class="team-list-about text">Graphic Design</p>
+                <p class="card-body__name">Matthew Dix</p>
+                <p class="card-body__about text">Graphic Design</p>
                </div>
                 </li>
             </ul>
@@ -194,9 +254,9 @@
 <!-- FOOTER -->
    <footer>
       <div class="page-footer container">
-        <p><span>&copy;</span> 2016 MoGo free PSD template by <span class="last-word">Laaqiq</span></p>
-        <form action="#" method="POST">
-            <input class="mail" type="email" placeholder="Your Email..." name="user_email" required autocomplete="off"><button class="footer-form btn">Subscribe</button>
+        <p class="page-footer__text"><span>&copy;</span> 2016 MoGo free PSD template by <span class="page-footer__text--last-word">Laaqiq</span></p>
+        <form action="#" method="POST" class="footer-form">
+            <input class="footer-form__mail" type="email" placeholder="Your Email..." name="user_email" required autocomplete="off"><button class="footer-form__button btn">Subscribe</button>
         </form>
       </div>
    </footer> 
