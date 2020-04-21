@@ -44,14 +44,14 @@ img {
     display: flex;
     list-style: none;
 }
-.page-header {
+.header {
     background-image: url(../img/eagle.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: #ffffff;
 }
-.page-nav {
+.header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,11 +63,6 @@ img {
             justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 176px;
-}
-.navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 .nav-site {
     font-size: 14px;
@@ -94,22 +89,18 @@ img {
     content: '';
     opacity: 0;
 }
-.nav-search__item:not(:last-child) {
-    margin-right: 40px;
-
-} 
-.nav-search__icon {
+.nav-site__icon {
     display: block;
     width: 18px;
     height: 18px;
     fill: #ffffff;
 }
-.page-header__about {
+.header__about {
     font-family: 'Kaushan Script', 'Arial', cursive;
     font-size: 72px;
     line-height: 116px;
 }
-.page-header__title {
+.header__title {
     width: 834px;
     font-size: 150px;
     line-height: 240px;
@@ -117,7 +108,7 @@ img {
     margin: 0 auto;
     margin-bottom: 80px;
 }
-.header-button {
+.header__button {
     display: inline-block;
     padding: 15px 30px;
     background-color: transparent;    
@@ -143,24 +134,24 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.center-one {
+.service__section {
     margin-top: 52px;
     margin-bottom: 102px;
 }
-.about-section {
+.section__about {
     font-family: 'Kaushan Script', 'Arial', cursive;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 12px;
 }
-.title-section {  
+.section__title{  
     font-weight: 900;
     font-size: 30px;
     line-height: 48px;
     text-transform: uppercase;
     position: relative;    
 }
-.title-section::after {
+.section__title::after {
     top: 64px;
     position: absolute;
     left: 50%;
@@ -183,16 +174,16 @@ img {
         justify-content: space-around;
     margin-bottom: 90px;
 }
-.service-card {
+.service-item {
     width: 382px;
     padding-left: 80px;
     margin-bottom: 98px;
     position: relative;    
 }
-.service-card:nth-last-child(-n+3) {
+.service-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
-.service-card__icon {
+.service-item__icon {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -200,8 +191,7 @@ img {
     left: 24px;
     fill: #99e2d5
 }
-
-.service-card__title {
+.service-item__title {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
@@ -210,23 +200,21 @@ img {
 
 /* SECTION TEAM */
 
-.center-two {
+.team__section {
     margin-bottom: 82px;
 }
-.team-about {
+.team__about {
     margin-bottom: 92px;
 }
-.team-list {
+.team__list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 82px;
 }
-.card-head {
+.team-item {
     position: relative;
     margin-bottom: 30px;
-}
-.blue-background {
     width: 380px;
     height: 470px;
     background-color: #95e1d3;
@@ -275,20 +263,19 @@ img {
     height: 32px;
     fill: #f38181
 }
-.card-body__name {
+.team-item__name {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-.card-body__about {
+.team-item__about {
     font-weight: 300;
     font-style: italic;
 }
 
 /* HOVER EFFECT */
 /* HEADER */
-
 .nav-site__link {
     -webkit-transition: color 200ms linear;
     -o-transition: color 200ms linear;
@@ -307,16 +294,15 @@ img {
 .nav-site__link:focus::after {
     opacity: 1;
 }
-.nav-search__icon {
+.nav-site__icon {
     -webkit-transition: fill 200ms linear;
     -o-transition: fill 200ms linear;
     transition: fill 200ms linear;
 }
-.nav-search__link:hover .nav-search__icon,
-.nav-search__link:focus .nav-search__icon {
+.nav-site__link:hover .nav-site__icon,
+.nav-site__link:focus .nav-site__icon {
     fill: #fce38a;
 }
-
 /* TEAM */
 .card-hover {
     -webkit-transition: -webkit-transform 200ms linear;
@@ -325,14 +311,14 @@ img {
     transition: transform 200ms linear;
     transition: transform 200ms linear, -webkit-transform 200ms linear;    
 }
-.team-list__item:hover .card-hover,
-.team-list__item:focus .card-hover {
+.team-item:hover .card-hover,
+.team-item:focus .card-hover {
     -webkit-transform: translate(-10px, -10px);
         -ms-transform: translate(-10px, -10px);
             transform: translate(-10px, -10px);    
 }
-.team-list__item:hover .image-foreground,
-.team-list__item:focus .image-foreground {
+.team-item:hover .card-hover__foreground,
+.team-item:focus .card-hover__foreground {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 227, 138, 0.502)), to(rgba(243, 129, 129, 0.502)));
     background-image: -o-linear-gradient(top, rgba(252, 227, 138, 0.502), rgba(243, 129, 129, 0.502));
     background-image: linear-gradient(to bottom, rgba(252, 227, 138, 0.502), rgba(243, 129, 129, 0.502));
@@ -342,9 +328,14 @@ img {
     -o-transition: opacity 200ms linear;
     transition: opacity 200ms linear; 
 }
-.team-list__item:hover .list-socials,
-.team-list__item:focus .list-socials {
+.team-item:hover .list-socials,
+.team-item:focus .list-socials {
     opacity: 1;
+}
+.list-socials__link {
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear; 
 }
 .list-socials__link:hover,
 .list-socials__link:focus {
@@ -362,7 +353,7 @@ img {
 
 /* FOOTER */
 
-.page-footer {
+.footer {
     font-size: 14px;
     line-height: 17px;
     color: #333333;
@@ -379,7 +370,7 @@ img {
             align-items: center;
     position: relative;
 }
-.page-footer::before {
+.footer::before {
     content: '';
     width: 100%;
     height: 1px;
@@ -388,10 +379,10 @@ img {
     bottom: 100%;
     margin-bottom: 24px;
 }
-.page-footer__text--last-word{
+.footer__text--last-word{
     color: #f59494;
 }
-.footer-form__mail {
+.form__mail {
     padding: 12px 30px;
     color: #cccccc;
     font-weight: 300;
@@ -399,7 +390,7 @@ img {
     border: 0;
     outline: 1px solid rgb(231, 231, 231);
 }
-.footer-form__button {
+.form__button {
     background-color: #95e1d3;
     padding: 12px 33px;
     border: 0;
@@ -409,7 +400,7 @@ img {
 
 /* MEDIA */
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .menu-section {
+    .header {
         background-image: url(../img/eagle@2x.png);
     }
 }
