@@ -63,8 +63,8 @@ img {
 .nav-site {
     font-size: 14px;
 }
-.nav-site__item {
-    margin-right: 58px;
+.nav-site__item:not(:nth-last-child(-n+1)) {
+    margin-right: 40px;
 }
 .nav-site__link {
     color: #ffffff;    
@@ -134,20 +134,20 @@ img {
 .service__section {
     margin-bottom: 102px;
 }
-.section__about {
+.section-about {
     font-family: 'Kaushan Script', 'Arial', cursive;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 12px;
 }
-.section__title{  
+.section-title {  
     font-weight: 900;
     font-size: 30px;
     line-height: 48px;
     text-transform: uppercase;
     position: relative;    
 }
-.section__title::after {
+.section-title::after {
     top: 64px;
     position: absolute;
     left: 50%;
