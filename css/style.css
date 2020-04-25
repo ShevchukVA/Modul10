@@ -13,11 +13,6 @@ body { font-family: 'Montserrat', 'Arial', sans-serif;
     line-height: 18px;
     color: #333333;
 }
-.clearfix::before {
-    content: '';
-    display: table;
-    clear: both;
-}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -50,6 +45,8 @@ img {
     background-position: center;
     background-size: cover;
     color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 230px;
 }
 .header__nav {
     display: -webkit-box;
@@ -61,7 +58,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 40px;
     margin-bottom: 176px;
 }
 .nav-site {
@@ -114,7 +110,6 @@ img {
     background-color: transparent;    
     border: 3px solid #ffffff;    
     cursor: pointer;
-    margin-bottom: 230px;
 }
 .btn {
     font-weight: 700;
@@ -133,9 +128,10 @@ img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 52px;
+    padding-bottom: 90px;    
 }
 .service__section {
-    margin-top: 52px;
     margin-bottom: 102px;
 }
 .section__about {
@@ -172,7 +168,6 @@ img {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 90px;
 }
 .service-item {
     width: 382px;
@@ -199,7 +194,9 @@ img {
 }
 
 /* SECTION TEAM */
-
+.team {
+    padding-bottom: 82px;
+}
 .team__section {
     margin-bottom: 82px;
 }
@@ -210,9 +207,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 82px;
 }
-.team-item {
+.team-item__head {
     position: relative;
     margin-bottom: 30px;
     width: 380px;
@@ -357,8 +353,11 @@ img {
     font-size: 14px;
     line-height: 17px;
     color: #333333;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    position: relative;
+}
+.footer__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -368,7 +367,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
+
 }
 .footer::before {
     content: '';
@@ -376,8 +375,7 @@ img {
     height: 1px;
     background-color: #e5e5e5;
     position: absolute;
-    bottom: 100%;
-    margin-bottom: 24px;
+    top: 0;
 }
 .footer__text--last-word{
     color: #f59494;

@@ -13,10 +13,10 @@
 <body>
 <!-- HEADER -->
     <header class="header">
-        <div class="container clearfix">
+        <div class="container">
             <nav class="header__nav">
-                <a href="#" class="link nav__logo">
-                    <img class="nav__img" srcset="img/MoGo.png 86w, img/MoGo@2x.png 172w"
+                <a href="#" class="link header__logo">
+                    <img class="header__img" srcset="img/MoGo.png 86w, img/MoGo@2x.png 172w"
                     sizes="86px"
                     src="img/MoGo.png"
                     alt="MoGo"
@@ -109,47 +109,51 @@
             <p class="team__about text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <ul class="list team__list">
                 <li class="team-item">
-                        <div class="card-hover">
-                           <img class="card-hover__img" srcset="img/Boy.png 380w, img/Boy@2x.png 760w"
-                           sizes="380px"
-                           src="img/Boy.png"
-                           alt="Boy"
-                           height="470">
-                           <div class="card-hover__foreground">
-                               <ul class="list list-socials">
-                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
-                                        <svg class="list-socials__icon">
-                                            <use href="img/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                      </a>
-                                  </li>
-                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
-                                        <svg class="list-socials__icon">
-                                            <use href="img/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                     </a>
-                                  </li>
-                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
-                                        <svg class="list-socials__icon">
-                                            <use href="img/symbol-defs.svg#icon-pinterest"></use>
-                                        </svg>
-                                     </a>
-                                  </li>
-                                  <li class="list-socials__item"><a href="#" class="link list-socials__link">
-                                        <svg class="list-socials__icon">
-                                            <use href="img/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                     </a>
-                                  </li>
-                               </ul>
-                           </div>
-                        </div>
+                    <div class="team-item__head">
+                            <div class="card-hover">
+                                <img class="card-hover__img" srcset="img/Boy.png 380w, img/Boy@2x.png 760w"
+                                sizes="380px"
+                                src="img/Boy.png"
+                                alt="Boy"
+                                height="470">
+                                <div class="card-hover__foreground">
+                                    <ul class="list list-socials">
+                                       <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                             <svg class="list-socials__icon">
+                                                 <use href="img/symbol-defs.svg#icon-facebook"></use>
+                                             </svg>
+                                           </a>
+                                       </li>
+                                       <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                             <svg class="list-socials__icon">
+                                                 <use href="img/symbol-defs.svg#icon-twitter"></use>
+                                             </svg>
+                                          </a>
+                                       </li>
+                                       <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                             <svg class="list-socials__icon">
+                                                 <use href="img/symbol-defs.svg#icon-pinterest"></use>
+                                             </svg>
+                                          </a>
+                                       </li>
+                                       <li class="list-socials__item"><a href="#" class="link list-socials__link">
+                                             <svg class="list-socials__icon">
+                                                 <use href="img/symbol-defs.svg#icon-instagram"></use>
+                                             </svg>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                </div>
+                             </div>
+
+                    </div>
                     <div class="team-item__body">
                         <p class="team-item__name">Christopher Campbell</p>
                         <p class="team-item__about text">Branding/UX design</p>
                     </div>
                 </li>
                 <li class="team-item">
+                    <div class="team-item__head">
                         <div class="card-hover">
                             <img class="card-hover__img" srcset="img/Boy_2.png 380w, img/Boy_2@2x.png 760w"
                             sizes="380px"
@@ -185,12 +189,14 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>    
                     <div class="team-item__body">
                         <p class="team-item__name">Michael Fertig </p>
                         <p class="team-item__about text">Developer</p>
                     </div>
                 </li>
                 <li class="team-item">
+                    <div class="team-item__head">
                         <div class="card-hover">
                             <img class="card-hover__img" srcset="img/Boy_3.png 380w, img/Boy_3@2x.png 760w"
                             sizes="380px"
@@ -226,6 +232,7 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
                     <div class="team-item__body">
                         <p class="team-item__name">Matthew Dix</p>
                         <p class="team-item__about text">Graphic Design</p>
@@ -236,8 +243,8 @@
        </section>
    </main>
 <!-- FOOTER -->
-   <footer>
-      <div class="footer container">
+   <footer class="footer">
+      <div class="footer__box container">
         <p class="footer__text"><span>&copy;</span> 2016 MoGo free PSD template by <span class="footer__text--last-word">Laaqiq</span></p>
         <form action="#" method="POST" class="form">
             <input class="form__mail" type="email" placeholder="Your Email..." name="user_email" required autocomplete="off"><button class="form__button btn">Subscribe</button>
